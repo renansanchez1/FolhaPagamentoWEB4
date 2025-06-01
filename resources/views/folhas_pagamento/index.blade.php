@@ -9,8 +9,8 @@
     </div>
 @endif
 
-<a href="{{ route('folhas-pagamento.create') }}" style="margin-bottom: 20px; display: inline-block;">
-    <button>Gerar Nova Folha</button>
+<a href="{{ route('folhas-pagamento.create')}}" >
+    Gerar Nova Folha
 </a>
 
 @if ($folhas->count() > 0)
@@ -34,7 +34,7 @@
                 <form action="{{ route('folhas-pagamento.destroy', $folha->id) }}" method="POST" style="display:inline-block;" onsubmit="return confirm('Confirma exclusão?')">
                     @csrf
                     @method('DELETE')
-                    <button type="submit" style="background:none;border:none;color:red;cursor:pointer;">Excluir</button>
+                    <button type="submit" class="btn-link-delete">Excluir</button>
                 </form>
             </td>
         </tr>

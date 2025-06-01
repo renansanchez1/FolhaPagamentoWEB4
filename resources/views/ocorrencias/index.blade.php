@@ -4,15 +4,15 @@
     <h1>Lista de Ocorrências</h1>
 
     @if (session('success'))
-        <div style="color: green;">
+        <div class="message-success">
             {{ session('success') }}
         </div>
     @endif
 
-    <a href="{{ route('ocorrencias.create') }}">Nova Ocorrência</a>
-
     @if ($ocorrencias->count())
-        <table border="1" cellpadding="8" cellspacing="0">
+        <a href="{{ route('ocorrencias.create') }}" class="btn-primary">Nova Ocorrência</a>
+
+        <table class="table-zendesk">
             <thead>
                 <tr>
                     <th>Funcionário</th>
@@ -32,11 +32,11 @@
                         <td>R$ {{ number_format($ocorrencia->valor, 2, ',', '.') }}</td>
                         <td>{{ \Carbon\Carbon::parse($ocorrencia->data)->format('d/m/Y') }}</td>
                         <td>
-                            <a href="{{ route('ocorrencias.edit', $ocorrencia->id) }}">Editar</a> |
+                            <a href="{{ route('ocorrencias.edit', $ocorrencia->id) }}" class="link-action">Editar</a> |
                             <form action="{{ route('ocorrencias.destroy', $ocorrencia->id) }}" method="POST" style="display: inline;">
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</button>
+                                <button type="submit" onclick="return confirm('Tem certeza que deseja excluir?')" class="btn-link-delete">Excluir</button>
                             </form>
                         </td>
                     </tr>
@@ -44,6 +44,7 @@
             </tbody>
         </table>
     @else
-        <p>Nenhuma ocorrência cadastrada.</p>
+        <p class="message-error">Nenhuma ocorrência cadastrada.</p>
+        <a href="{{ route('ocorrencias.create') }}" class="btn-primary">Nova Ocorrência</a>
     @endif
 @endsection

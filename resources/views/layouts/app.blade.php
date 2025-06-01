@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+   <link rel="stylesheet" href="{{ asset('css/layout.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/funcionarios.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/ocorrencias.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/create_ocorrencias.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/contas.css') }}">
+
+
     <title>Folha de Pagamento</title>
 </head>
 <body>

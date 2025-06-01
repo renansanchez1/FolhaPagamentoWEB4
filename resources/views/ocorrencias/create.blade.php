@@ -13,10 +13,10 @@
         </div>
     @endif
 
-    <form action="{{ route('ocorrencias.store') }}" method="POST">
+    <form action="{{ route('ocorrencias.store') }}" method="POST" class="form-centralizado">
         @csrf
 
-        <label for="funcionario_id">Funcionário:</label><br>
+        <label for="funcionario_id">Ocorrência:</label><br>
         <select name="funcionario_id" required>
             <option value="">-- Selecione --</option>
             @foreach ($funcionarios as $funcionario)
@@ -31,6 +31,6 @@
         <input type="number" name="valor" step="0.01" placeholder="Valor" value="{{ old('valor') }}"><br>
         <input type="date" name="data" value="{{ old('data') }}"><br>
 
-        <button type="submit">Salvar</button>
+        <button type="submit" class="salvar">Salvar</button>
     </form>
 @endsection

@@ -3,10 +3,10 @@
 @section('content')
     <h1>Nova Conta a Pagar</h1>
 
-    <form action="{{ route('contas-pagar.store') }}" method="POST">
+    <form action="{{ route('contas-pagar.store') }}" method="POST" class="form-centralizado">
         @csrf
 
-        <label for="funcionario_id">Funcionário:</label>
+        <label for="funcionario_id">Conta:</label>
         <select name="funcionario_id" required>
             <option value="">-- Selecione --</option>
             @foreach ($funcionarios as $funcionario)
@@ -24,6 +24,6 @@
             <option value="pago">Pago</option>
         </select><br>
 
-        <button type="submit">Salvar</button>
+        <button type="submit"class="salvar">Salvar</button>
     </form>
 @endsection

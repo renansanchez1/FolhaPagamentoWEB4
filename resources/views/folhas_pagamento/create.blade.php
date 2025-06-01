@@ -17,8 +17,8 @@
     @csrf
     <label for="competencia">Competência (Ano-Mês):</label>
     <input type="month" name="competencia" id="competencia" required>
-    <button type="submit">Gerar</button>
+    <button type="submit" class="salvar">Gerar</button>
 </form>
 
-<a href="{{ route('folhas-pagamento.index') }}" style="margin-top: 20px; display: inline-block;">&laquo; Voltar</a>
+<a href="{{ route('folhas-pagamento.index') }}" style="margin-top: 20px; display: inline-block;" class="botao-voltar">&laquo; Voltar</a>
 @endsection
