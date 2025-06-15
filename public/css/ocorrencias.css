@@ -1,0 +1,60 @@
+.message-success {
+    color: #1e7e34;
+    background-color: #d4edda;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.message-error {
+    color: #a94442; 
+    background-color: #f8d7da;
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+tbody form button {
+  background-color: transparent;
+  border: none;
+  color: #a94442;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+.table-zendesk {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+
+.table-zendesk th,
+.table-zendesk td {
+    padding: 12px 20px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.table-zendesk thead {
+    background-color: #f9fafb;
+}
+
+.link-action {
+    color: #03363d;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+.btn-link-delete {
+    background: none;
+    border: none;
+    color: #a94442;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0;
+}
+
+

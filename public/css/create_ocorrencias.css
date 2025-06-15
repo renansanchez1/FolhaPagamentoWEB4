@@ -1,0 +1,142 @@
+form {
+    max-width: 480px;
+    margin-top: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #03363d;
+    display: block;
+    margin-bottom: 6px;
+}
+
+select, input[type="text"], input[type="number"], input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 18px;
+    border: 1.5px solid #c1c9c8;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #333;
+    transition: border-color 0.2s ease;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus, input[type="date"]:focus {
+    outline: none;
+    border-color: #05565e;
+    box-shadow: 0 0 6px #a5b5ab88;
+}
+
+.salvar {
+    background-color: #03363d;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.salvar:hover {
+    background-color: #05565e;
+}
+
+div ul {
+    background-color: #f8d7da;
+    border-radius: 6px;
+    padding: 15px 20px;
+    color: #a94442;
+    margin-bottom: 20px;
+    list-style-type: disc;
+}
+
+div ul li {
+    margin-bottom: 6px;
+}
+.form-centralizado {
+  width: 90%;
+  max-width: 580px;
+  margin: auto;
+  padding: 30px;
+  background: #f9faf9;
+  border-radius: 10px;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+}
+.form-centralizado {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+input[type="month"] {
+  padding: 10px 12px;
+  border: 1.5px solid #c1c9c8;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+input[type="month"]:focus {
+  outline: none;
+  border-color: #05565e;
+  box-shadow: 0 0 6px #a5b5ab88;
+}
+
+
+div[style*="color: red"] {
+  max-width: 400px;
+  margin: 0 auto 20px auto;
+  background-color: #f8d7da;
+  border-radius: 6px;
+  padding: 15px 20px;
+  color: #a94442;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.botao-voltar {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background-color: #f0f0f0;
+  color: #03363d;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-shadow: 0 2px 5px rgb(0 0 0 / 0.1);
+}
+
+.botao-voltar:hover {
+  background-color: #03363d;
+  color: #fff;
+  text-decoration: none;
+}
+
+a[href$="folhas-pagamento.index"] {
+  display: block;
+  max-width: 400px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+  color: #05565e;
+  font-weight: 600;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: color 0.2s ease;
+}
+
+button:hover{
+    text-decoration: none;
+}
